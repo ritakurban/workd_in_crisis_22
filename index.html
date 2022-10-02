@@ -1,40 +1,60 @@
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <h1>
-      Energy Crisis
-      </h1>
-    </div>
-    <div class="description">
-      The UCL Induction Week Meet and Envision Online Hackathon with IFRC Red Cross, OXFAM, UN, Microsoft, IBM, Intel and NTTDATA, Team 6
-    </div>
-    
-    <div class="video">
-      <iframe width="420" 
-              height="315"
-              src="https://www.youtube.com/embed/w-tLZjO6XMc?controls=0">
-      </iframe>
-    </div>
-    <div class="resources">
-      <h2>Resources</h2>
-      <ul>
-        <li>
-          <a href="https://azure.microsoft.com/en-gb/free/students/">Azure for students</a>
-        </li>
-        <li>
-          <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps">Azure Static Web apps extension</a>
-        </li>
-        <li>
-          <a href="https://code.visualstudio.com/download">Visual Studio Code download</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer">
-      &#169; copyright NAME 2022
-    </div>
-    
-  </body>
+</head>
+
+<body>
+    <section class="lg">
+        <div class="light">
+            <div class="wire"></div>
+            <div class="bulb">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="switch">
+                <div class="btn"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="turn-the-light-on">
+        <h1>(TURN THE LIGHT ON)</h1>
+    </section>
+
+    <section>
+        <h1>TEAM HACK 6 PRESENTS</h1>
+    </section>
+
+    <section>
+        <h1>The UCL Induction Week Meet and Envision Online Hackathon with IFRC Red Cross, OXFAM, UN, Microsoft, IBM,
+            Intel and NTTDATA</h1>
+    </section>
+
+    <section>
+        <h1>WE ARE IN AN ENERGY CRISIS</h1>
+    </section>
+
+    <main>
+        <iframe src="https://www.youtube.com/embed/qGzmP3kWIjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+
+    <section>
+        &#169; COPYRIGHT HACK6 2022
+    </section>
+
+    <audio id="audio" src="click.mp3" autostart="false"></audio>
+    <script>
+        let btn = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        let audio = document.querySelector('#audio');
+        btn.onclick = function () {
+            body.classList.toggle('on');
+            audio.play();
+        }
+    </script>
+
+
+</body>
+
 </html>
